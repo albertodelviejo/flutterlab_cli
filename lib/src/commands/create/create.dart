@@ -6,8 +6,8 @@ import 'package:path/path.dart' as path;
 import 'package:universal_io/io.dart';
 import 'package:usage/usage_io.dart';
 import 'package:very_good_analysis/very_good_analysis.dart';
-import 'package:very_good_cli/src/command_runner.dart';
-import 'package:very_good_cli/src/commands/create/templates/templates.dart';
+import 'package:flutterlab_cli/src/command_runner.dart';
+import 'package:flutterlab_cli/src/commands/create/templates/templates.dart';
 
 const _defaultOrgName = 'com.example.verygoodcore';
 const _defaultDescription = 'A Very Good Project created by Very Good CLI.';
@@ -31,7 +31,7 @@ final RegExp _orgNameRegExp = RegExp(r'^[a-zA-Z][\w-]*(\.[a-zA-Z][\w-]*)+$');
 typedef GeneratorBuilder = Future<MasonGenerator> Function(MasonBundle);
 
 /// {@template create_command}
-/// `very_good create` command creates code from various built-in templates.
+/// `flutterlabcreate` command creates code from various built-in templates.
 /// {@endtemplate}
 class CreateCommand extends Command<int> {
   /// {@macro create_command}
@@ -120,7 +120,7 @@ class CreateCommand extends Command<int> {
   String get name => 'create';
 
   @override
-  String get invocation => 'very_good create <output directory>';
+  String get invocation => 'flutterlabcreate <output directory>';
 
   /// [ArgResults] which can be overridden for testing.
   @visibleForTesting

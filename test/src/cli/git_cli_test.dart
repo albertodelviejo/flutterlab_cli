@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:very_good_cli/src/cli/cli.dart';
+import 'package:flutterlab_cli/src/cli/cli.dart';
 
 void main() {
   group('Git', () {
@@ -7,7 +7,7 @@ void main() {
       test('completes for a reachable remote', () async {
         await expectLater(
           Git.reachable(
-            Uri.parse('https://github.com/verygoodopensource/very_good_cli'),
+            Uri.parse('https://github.com/FlutterLabTeam/flutterlab_cli'),
           ),
           completes,
         );
@@ -17,7 +17,7 @@ void main() {
           () async {
         await expectLater(
           Git.reachable(
-            Uri.parse('https://github.com/verygoodopensource/_very_good_cli'),
+            Uri.parse('https://github.com/FlutterLabTeam/_flutterlab_cli'),
           ),
           throwsA(isA<UnreachableGitDependency>()),
         );
@@ -27,7 +27,7 @@ void main() {
     group('UnreachableGitDependency', () {
       test('has correct toString override', () {
         final remote =
-            Uri.parse('https://github.com/verygoodopensource/_very_good_cli');
+            Uri.parse('https://github.com/FlutterLabTeam/_flutterlab_cli');
         final exception = UnreachableGitDependency(remote: remote);
         expect(
           exception.toString(),

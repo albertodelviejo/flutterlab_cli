@@ -1,9 +1,9 @@
-name: very_good_cli
+name: flutterlab_cli
 
 on:
   pull_request:
     paths:
-      - ".github/workflows/very_good_cli.yaml"
+      - ".github/workflows/flutterlab_cli.yaml"
       - "lib/**"
       - "test/**"
       - "pubspec.yaml"
@@ -11,7 +11,7 @@ on:
     branches:
       - main
     paths:
-      - ".github/workflows/very_good_cli.yaml"
+      - ".github/workflows/flutterlab_cli.yaml"
       - "lib/**"
       - "test/**"
       - "pubspec.yaml"
@@ -43,7 +43,7 @@ jobs:
           flutter pub run test -j 1 -x pull-request-only -x e2e --coverage=coverage --test-randomize-ordering-seed random && dart pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info --packages=.packages --report-on=lib
 
       - name: Check Code Coverage
-        uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
+        uses: FlutterLabTeam/very_good_coverage@v1.2.0
 
   e2e:
     runs-on: ubuntu-latest

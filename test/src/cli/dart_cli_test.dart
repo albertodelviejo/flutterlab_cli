@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:very_good_cli/src/cli/cli.dart';
+import 'package:flutterlab_cli/src/cli/cli.dart';
 
 void main() {
   group('Dart', () {

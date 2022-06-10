@@ -6,7 +6,7 @@ import 'package:mason/mason.dart';
 import 'package:meta/meta.dart';
 import 'package:path/path.dart' as path;
 import 'package:universal_io/io.dart';
-import 'package:very_good_cli/src/cli/cli.dart';
+import 'package:flutterlab_cli/src/cli/cli.dart';
 
 /// Signature for the [Flutter.installed] method.
 typedef FlutterInstalledCommand = Future<bool> Function();
@@ -27,7 +27,7 @@ typedef FlutterTestCommand = Future<List<int>> Function({
 });
 
 /// {@template test_command}
-/// `very_good test` command for running tests.
+/// `flutterlabtest` command for running tests.
 /// {@endtemplate}
 class TestCommand extends Command<int> {
   /// {@macro test_command}

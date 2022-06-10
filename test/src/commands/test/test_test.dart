@@ -4,8 +4,8 @@ import 'package:args/args.dart';
 import 'package:mason/mason.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:test/test.dart';
-import 'package:very_good_cli/src/cli/cli.dart';
-import 'package:very_good_cli/src/commands/test/test.dart';
+import 'package:flutterlab_cli/src/cli/cli.dart';
+import 'package:flutterlab_cli/src/commands/test/test.dart';
 
 import '../../../helpers/helpers.dart';
 
@@ -13,7 +13,7 @@ const expectedTestUsage = [
   // ignore: no_adjacent_strings_in_list
   'Run tests in a Dart or Flutter project.\n'
       '\n'
-      'Usage: very_good test [arguments]\n'
+      'Usage: flutterlab test [arguments]\n'
       '-h, --help                            Print this usage information.\n'
       '''    --coverage                        Whether to collect coverage information.\n'''
       '''-r, --recursive                       Run tests recursively for all nested packages.\n'''
@@ -27,7 +27,7 @@ const expectedTestUsage = [
       '''    --test-randomize-ordering-seed    The seed to randomize the execution order of test cases within test files.\n'''
       '''    --update-goldens                  Whether "matchesGoldenFile()" calls within your test methods should update the golden files.\n'''
       '\n'
-      'Run "very_good help" to see global options.'
+      'Run "flutterlabhelp" to see global options.'
 ];
 
 // ignore: one_member_abstracts

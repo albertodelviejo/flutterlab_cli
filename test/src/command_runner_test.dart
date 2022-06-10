@@ -7,8 +7,8 @@ import 'package:mocktail/mocktail.dart';
 import 'package:pub_updater/pub_updater.dart';
 import 'package:test/test.dart';
 import 'package:usage/usage_io.dart';
-import 'package:very_good_cli/src/command_runner.dart';
-import 'package:very_good_cli/src/version.dart';
+import 'package:flutterlab_cli/src/command_runner.dart';
+import 'package:flutterlab_cli/src/version.dart';
 
 class MockAnalytics extends Mock implements Analytics {}
 
@@ -19,7 +19,7 @@ class MockPubUpdater extends Mock implements PubUpdater {}
 const expectedUsage = [
   '🦄 A Very Good Command Line Interface\n'
       '\n'
-      'Usage: very_good <command> [arguments]\n'
+      'Usage: flutterlab <command> [arguments]\n'
       '\n'
       'Global options:\n'
       '-h, --help           Print this usage information.\n'
@@ -30,23 +30,23 @@ const expectedUsage = [
       '          [true]     Enable anonymous usage statistics\n'
       '\n'
       'Available commands:\n'
-      '  create     very_good create <output directory>\n'
+      '  create     flutterlabcreate <output directory>\n'
       '''             Creates a new very good project in the specified directory.\n'''
       '  packages   Command for managing packages.\n'
       '  test       Run tests in a Dart or Flutter project.\n'
       '\n'
-      'Run "very_good help <command>" for more information about a command.'
+      'Run "flutterlabhelp <command>" for more information about a command.'
 ];
 
 const responseBody =
-    '{"name": "very_good_cli", "versions": ["0.4.0", "0.3.3"]}';
+    '{"name": "flutterlab_cli", "versions": ["0.4.0", "0.3.3"]}';
 
 const latestVersion = '0.0.0';
 
 final updatePrompt = '''
 ${lightYellow.wrap('Update available!')} ${lightCyan.wrap(packageVersion)} \u2192 ${lightCyan.wrap(latestVersion)}
-${lightYellow.wrap('Changelog:')} ${lightCyan.wrap('https://github.com/verygoodopensource/very_good_cli/releases/tag/v$latestVersion')}
-Run ${lightCyan.wrap('dart pub global activate very_good_cli')} to update''';
+${lightYellow.wrap('Changelog:')} ${lightCyan.wrap('https://github.com/FlutterLabTeam/flutterlab_cli/releases/tag/v$latestVersion')}
+Run ${lightCyan.wrap('dart pub global activate flutterlab_cli')} to update''';
 
 void main() {
   group('VeryGoodCommandRunner', () {

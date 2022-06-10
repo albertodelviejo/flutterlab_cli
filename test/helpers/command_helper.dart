@@ -4,7 +4,7 @@ import 'package:mason/mason.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:pub_updater/pub_updater.dart';
 import 'package:usage/usage.dart';
-import 'package:very_good_cli/src/command_runner.dart';
+import 'package:flutterlab_cli/src/command_runner.dart';
 
 class MockAnalytics extends Mock implements Analytics {}
 

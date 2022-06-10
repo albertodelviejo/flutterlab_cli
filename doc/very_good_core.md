@@ -13,15 +13,15 @@ A Very Good Flutter Starter Project created by the [Very Good Ventures Team][ver
 
 ### Installation 💻
 
-For first time users, start by installing the [Very Good CLI from pub.dev][very_good_cli_link].
+For first time users, start by installing the [Very Good CLI from pub.dev][flutterlab_cli_link].
 
 ```sh
-dart pub global activate very_good_cli
+dart pub global activate flutterlab_cli
 ```
 
 ### Create a new Flutter Project 🆕
 
-Then, you can use the `very_good create` command just like you would `flutter create`
+Then, you can use the `flutterlabcreate` command just like you would `flutter create`
 
 ![Very Good Create][very_good_create]
 
@@ -29,15 +29,15 @@ Then, you can use the `very_good create` command just like you would `flutter cr
 
 ```sh
 # opt into anonymous usage statistics
-very_good --analytics true
+flutterlab--analytics true
 
 # opt out of anonymous usage statistics
-very_good --analytics false
+flutterlab--analytics false
 ```
 
 ### Running the Project ⚡
 
-Once you have finished running `very_good create` with the project directory of your choice, you can change directories into the new project directory and install the dependencies
+Once you have finished running `flutterlabcreate` with the project directory of your choice, you can change directories into the new project directory and install the dependencies
 
 ```sh
 cd my_app
@@ -78,7 +78,7 @@ Now your app is running 🎉
 
 ## Why Very Good Core? 🤔
 
-We liked the simplicity and developer experience of running `flutter create` when getting started on a new project. We wanted to provide a similar experience with `very_good create` which built on top of `flutter create` and includes the core standards and best practices we use at [Very Good Ventures][very_good_ventures_link].
+We liked the simplicity and developer experience of running `flutter create` when getting started on a new project. We wanted to provide a similar experience with `flutterlabcreate` which built on top of `flutter create` and includes the core standards and best practices we use at [Very Good Ventures][very_good_ventures_link].
 
 We built the CLI to be extensible so it could potentially support multiple commands and templates in the future.
 
@@ -261,8 +261,8 @@ When you create a new project, it has a default launcher icon. To customize this
 [very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
 [very_good_core_link]: very_good_core.md
 [very_good_coverage_link]: https://github.com/marketplace/actions/very-good-coverage
-[very_good_cli_link]: https://pub.dev/packages/very_good_cli
-[very_good_create]: https://raw.githubusercontent.com/VeryGoodOpenSource/very_good_cli/main/doc/assets/very_good_create.png
+[flutterlab_cli_link]: https://pub.dev/packages/flutterlab_cli
+[very_good_create]: https://raw.githubusercontent.com/FlutterLabTeam/flutterlab_cli/main/doc/assets/very_good_create.png
 [very_good_testing_blog_link]: https://verygood.ventures/blog/guide-to-flutter-testing?utm_source=github&utm_medium=banner&utm_campaign=CLI
 [very_good_ventures_link]: https://verygood.ventures/?utm_source=github&utm_medium=banner&utm_campaign=core
 [very_good_ventures_link_dark]: https://verygood.ventures/?utm_source=github&utm_medium=banner&utm_campaign=core#gh-dark-mode-only

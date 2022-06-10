@@ -3,7 +3,7 @@ import 'package:mocktail/mocktail.dart';
 import 'package:path/path.dart' as p;
 import 'package:test/test.dart';
 import 'package:universal_io/io.dart';
-import 'package:very_good_cli/src/cli/cli.dart';
+import 'package:flutterlab_cli/src/cli/cli.dart';
 
 const otherContents = '''
 class Other {
@@ -229,7 +229,7 @@ environment:
 dev_dependencies:
   very_good_analysis:
     git:
-      url: https://github.com/verygoodopensource/_very_good_analysis''';
+      url: https://github.com/FlutterLabTeam/_very_good_analysis''';
 
 class MockLogger extends Mock implements Logger {}
 

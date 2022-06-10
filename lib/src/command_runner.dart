@@ -3,17 +3,17 @@ import 'package:args/command_runner.dart';
 import 'package:mason/mason.dart' hide packageVersion;
 import 'package:pub_updater/pub_updater.dart';
 import 'package:usage/usage_io.dart';
-import 'package:very_good_cli/src/commands/commands.dart';
-import 'package:very_good_cli/src/version.dart';
+import 'package:flutterlab_cli/src/commands/commands.dart';
+import 'package:flutterlab_cli/src/version.dart';
 
 // The Google Analytics tracking ID.
 const _gaTrackingId = 'UA-117465969-4';
 
 // The Google Analytics Application Name.
-const _gaAppName = 'very-good-cli';
+const _gaAppName = 'flutterlab-cli';
 
 /// The package name.
-const packageName = 'very_good_cli';
+const packageName = 'flutterlab_cli';
 
 /// {@template very_good_command_runner}
 /// A [CommandRunner] for the Very Good CLI.
@@ -28,7 +28,7 @@ class VeryGoodCommandRunner extends CommandRunner<int> {
         _analytics =
             analytics ?? AnalyticsIO(_gaTrackingId, _gaAppName, packageVersion),
         _pubUpdater = pubUpdater ?? PubUpdater(),
-        super('very_good', '🦄 A Very Good Command Line Interface') {
+        super('flutterlab', '🦄 A Very Good Command Line Interface') {
     argParser
       ..addFlag(
         'version',
@@ -122,8 +122,8 @@ class VeryGoodCommandRunner extends CommandRunner<int> {
           ..info(
             '''
 ${lightYellow.wrap('Update available!')} ${lightCyan.wrap(packageVersion)} \u2192 ${lightCyan.wrap(latestVersion)}
-${lightYellow.wrap('Changelog:')} ${lightCyan.wrap('https://github.com/verygoodopensource/very_good_cli/releases/tag/v$latestVersion')}
-Run ${lightCyan.wrap('dart pub global activate very_good_cli')} to update''',
+${lightYellow.wrap('Changelog:')} ${lightCyan.wrap('https://github.com/FlutterLabTeam/flutterlab_cli/releases/tag/v$latestVersion')}
+Run ${lightCyan.wrap('dart pub global activate flutterlab_cli')} to update''',
           );
       }
     } catch (_) {}

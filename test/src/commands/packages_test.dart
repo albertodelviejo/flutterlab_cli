@@ -18,24 +18,24 @@ const expectedPackagesUsage = [
   // ignore: no_adjacent_strings_in_list
   'Command for managing packages.\n'
       '\n'
-      'Usage: very_good packages <subcommand> [arguments]\n'
+      'Usage: flutterlab packages <subcommand> [arguments]\n'
       '-h, --help    Print this usage information.\n'
       '\n'
       'Available subcommands:\n'
       '  get   Get packages in a Dart or Flutter project.\n'
       '\n'
-      'Run "very_good help" to see global options.'
+      'Run "flutterlabhelp" to see global options.'
 ];
 
 const expectedPackagesGetUsage = [
   // ignore: no_adjacent_strings_in_list
   'Get packages in a Dart or Flutter project.\n'
       '\n'
-      'Usage: very_good packages get [arguments]\n'
+      'Usage: flutterlab packages get [arguments]\n'
       '-h, --help         Print this usage information.\n'
       '''-r, --recursive    Install dependencies recursively for all nested packages.\n'''
       '\n'
-      'Run "very_good help" to see global options.'
+      'Run "flutterlabhelp" to see global options.'
 ];
 
 void main() {

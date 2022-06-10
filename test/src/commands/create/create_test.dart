@@ -8,9 +8,9 @@ import 'package:pub_updater/pub_updater.dart';
 import 'package:test/test.dart';
 import 'package:universal_io/io.dart';
 import 'package:usage/usage_io.dart';
-import 'package:very_good_cli/src/command_runner.dart';
-import 'package:very_good_cli/src/commands/create/create.dart';
-import 'package:very_good_cli/src/commands/create/templates/templates.dart';
+import 'package:flutterlab_cli/src/command_runner.dart';
+import 'package:flutterlab_cli/src/commands/create/create.dart';
+import 'package:flutterlab_cli/src/commands/create/templates/templates.dart';
 
 import '../../../helpers/helpers.dart';
 
@@ -18,7 +18,7 @@ const expectedUsage = [
   // ignore: no_adjacent_strings_in_list
   'Creates a new very good project in the specified directory.\n'
       '\n'
-      'Usage: very_good create <output directory>\n'
+      'Usage: flutterlab create <output directory>\n'
       '-h, --help                    Print this usage information.\n'
       '''    --project-name            The project name for this new project. This must be a valid dart package name.\n'''
       '    --desc                    The description for this new project.\n'
@@ -45,7 +45,7 @@ const expectedUsage = [
       '''    --windows                 The plugin supports the Windows platform.\n'''
       '                              (defaults to "true")\n'
       '\n'
-      'Run "very_good help" to see global options.'
+      'Run "flutterlabhelp" to see global options.'
 ];
 
 const pubspec = '''

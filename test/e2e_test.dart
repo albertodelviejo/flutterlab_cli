@@ -5,7 +5,7 @@ import 'package:path/path.dart' as path;
 import 'package:test/test.dart';
 import 'package:universal_io/io.dart';
 import 'package:usage/usage.dart';
-import 'package:very_good_cli/src/command_runner.dart';
+import 'package:flutterlab_cli/src/command_runner.dart';
 
 class MockAnalytics extends Mock implements Analytics {}
 

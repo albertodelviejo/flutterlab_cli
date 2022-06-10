@@ -18,12 +18,12 @@ A Very Good Command Line Interface for Dart.
 ## Installing
 
 ```sh
-dart pub global activate very_good_cli
+dart pub global activate flutterlab_cli
 ```
 
 ## Commands
 
-### `very_good create`
+### `flutterlabcreate`
 
 Create a very good project in seconds based on the provided template. The [Very Good Core][very_good_core_link] template is used by default.
 
@@ -32,7 +32,7 @@ Create a very good project in seconds based on the provided template. The [Very 
 ```sh
 Creates a new very good project in the specified directory.
 
-Usage: very_good create <output directory>
+Usage: flutterlabcreate <output directory>
 -h, --help                    Print this usage information.
     --project-name            The project name for this new project. This must be a valid dart package name.
     --desc                    The description for this new project.
@@ -57,22 +57,22 @@ Usage: very_good create <output directory>
 
 ```sh
 # Create a new Flutter app named my_app
-very_good create my_app --desc "My new Flutter app"
+flutterlabcreate my_app --desc "My new Flutter app"
 
 # Create a new Flutter app named my_app with a custom org
-very_good create my_app --desc "My new Flutter app" --org "com.custom.org"
+flutterlabcreate my_app --desc "My new Flutter app" --org "com.custom.org"
 
 # Create a new Flutter package named my_flutter_package
-very_good create my_flutter_package -t flutter_pkg --desc "My new Flutter package"
+flutterlabcreate my_flutter_package -t flutter_pkg --desc "My new Flutter package"
 
 # Create a new Dart package named my_dart_package
-very_good create my_dart_package -t dart_pkg --desc "My new Dart package"
+flutterlabcreate my_dart_package -t dart_pkg --desc "My new Dart package"
 
 # Create a new Flutter plugin named my_flutter_plugin (all platforms enabled)
-very_good create my_flutter_plugin -t flutter_plugin --desc "My new Flutter plugin"
+flutterlabcreate my_flutter_plugin -t flutter_plugin --desc "My new Flutter plugin"
 
 # Create a new Flutter plugin named my_flutter_plugin (some platforms disabled)
-very_good create my_flutter_plugin -t flutter_plugin --desc "My new Flutter plugin" --windows false --macos false --linux false
+flutterlabcreate my_flutter_plugin -t flutter_plugin --desc "My new Flutter plugin" --windows false --macos false --linux false
 ```
 
 ### What's Included in Very Good Core? 📦
@@ -97,26 +97,26 @@ Out of the box, [Very Good Core][very_good_core_link] includes:
 
 ✅&nbsp; [Continuous Integration][github_actions_link] - Lint, format, test, and enforce code coverage using [GitHub Actions][github_actions_link]
 
-_\* Learn more at [Flutter Starter App: Very Good Core & CLI][very_good_cli_blog_link]_
+_\* Learn more at [Flutter Starter App: Very Good Core & CLI][flutterlab_cli_blog_link]_
 
 ---
 
-### `very_good packages get`
+### `flutterlabpackages get`
 
 Get packages in a Dart or Flutter project.
 
 ```sh
 # Install packages in the current directory
-very_good packages get
+flutterlabpackages get
 
 # Install packages in ./some/other/directory
-very_good packages get ./some/other/directory
+flutterlabpackages get ./some/other/directory
 
 # Install packages recursively
-very_good packages get --recursive
+flutterlabpackages get --recursive
 
 # Install packages recursively (shorthand)
-very_good packages get -r
+flutterlabpackages get -r
 ```
 
 #### Complete Usage
@@ -124,35 +124,35 @@ very_good packages get -r
 ```sh
 Get packages in a Dart or Flutter project.
 
-Usage: very_good packages get [arguments]
+Usage: flutterlabpackages get [arguments]
 -h, --help         Print this usage information.
 -r, --recursive    Install dependencies recursively for all nested packages.
 
-Run "very_good help" to see global options.
+Run "flutterlabhelp" to see global options.
 ```
 
-### `very_good test`
+### `flutterlabtest`
 
 Run tests in a Dart or Flutter project.
 
 ```sh
 # Run all tests
-very_good test
+flutterlabtest
 
 # Run all tests and collect coverage
-very_good test --coverage
+flutterlabtest --coverage
 
 # Run all tests and enforce 100% coverage
-very_good test --coverage --min-coverage 100
+flutterlabtest --coverage --min-coverage 100
 
 # Run only tests in ./some/other/directory
-very_good test ./some/other/directory
+flutterlabtest ./some/other/directory
 
 # Run tests recursively
-very_good test --recursive
+flutterlabtest --recursive
 
 # Run tests recursively (shorthand)
-very_good test -r
+flutterlabtest -r
 ```
 
 #### Complete Usage
@@ -160,7 +160,7 @@ very_good test -r
 ```sh
 Run tests in a Dart or Flutter project.
 
-Usage: very_good test [arguments]
+Usage: flutterlabtest [arguments]
 -h, --help                            Print this usage information.
     --coverage                        Whether to collect coverage information.
 -r, --recursive                       Run tests recursively for all nested packages.
@@ -172,17 +172,17 @@ Usage: very_good test [arguments]
     --test-randomize-ordering-seed    The seed to randomize the execution order of test cases within test files.
     --update-goldens                  Whether "matchesGoldenFile()" calls within your test methods should update the golden files.
 
-Run "very_good help" to see global options.
+Run "flutterlabhelp" to see global options.
 ```
 
-### `very_good --help`
+### `flutterlab--help`
 
 See the complete list of commands and usage information.
 
 ```sh
 🦄 A Very Good Command Line Interface
 
-Usage: very_good <command> [arguments]
+Usage: flutterlab<command> [arguments]
 
 Global options:
 -h, --help           Print this usage information.
@@ -193,18 +193,18 @@ Global options:
           [true]     Enable anonymous usage statistics
 
 Available commands:
-  create     very_good create <output directory>
+  create     flutterlabcreate <output directory>
              Creates a new very good project in the specified directory.
   packages   Command for managing packages.
   test       Run tests in a Dart or Flutter project.
 
-Run "very_good help <command>" for more information about a command.
+Run "flutterlabhelp <command>" for more information about a command.
 ```
 
 [bloc_link]: https://bloclibrary.dev
-[ci_badge]: https://github.com/VeryGoodOpenSource/very_good_cli/workflows/very_good_cli/badge.svg
-[ci_link]: https://github.com/VeryGoodOpenSource/very_good_cli/actions
-[coverage_badge]: https://raw.githubusercontent.com/VeryGoodOpenSource/very_good_cli/main/coverage_badge.svg
+[ci_badge]: https://github.com/FlutterLabTeam/flutterlab_cli/workflows/flutterlab_cli/badge.svg
+[ci_link]: https://github.com/FlutterLabTeam/flutterlab_cli/actions
+[coverage_badge]: https://raw.githubusercontent.com/FlutterLabTeam/flutterlab_cli/main/coverage_badge.svg
 [flutter_cross_platform_link]: https://flutter.dev/docs/development/tools/sdk/release-notes/supported-platforms
 [flutter_flavors_link]: https://flutter.dev/docs/deployment/flavors
 [github_actions_link]: https://github.com/features/actions
@@ -215,14 +215,14 @@ Run "very_good help <command>" for more information about a command.
 [logo_white]: https://raw.githubusercontent.com/VGVentures/very_good_brand/main/styles/README/vgv_logo_white.png#gh-dark-mode-only
 [logging_link]: https://api.flutter.dev/flutter/dart-developer/log.html
 [null_safety_link]: https://flutter.dev/docs/null-safety
-[pub_badge]: https://img.shields.io/pub/v/very_good_cli.svg
-[pub_link]: https://pub.dartlang.org/packages/very_good_cli
+[pub_badge]: https://img.shields.io/pub/v/flutterlab_cli.svg
+[pub_link]: https://pub.dartlang.org/packages/flutterlab_cli
 [testing_link]: https://flutter.dev/docs/testing
 [very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
 [very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
-[very_good_cli_blog_link]: https://verygood.ventures/blog/flutter-starter-app-very-good-core-cli?utm_source=github&utm_medium=banner&utm_campaign=CLIblog
+[flutterlab_cli_blog_link]: https://verygood.ventures/blog/flutter-starter-app-very-good-core-cli?utm_source=github&utm_medium=banner&utm_campaign=CLIblog
 [very_good_core_link]: doc/very_good_core.md
-[very_good_create]: https://raw.githubusercontent.com/VeryGoodOpenSource/very_good_cli/main/doc/assets/very_good_create.gif
+[very_good_create]: https://raw.githubusercontent.com/FlutterLabTeam/flutterlab_cli/main/doc/assets/very_good_create.gif
 [very_good_ventures_link]: https://verygood.ventures/?utm_source=github&utm_medium=banner&utm_campaign=CLI
 [very_good_ventures_link_dark]: https://verygood.ventures/?utm_source=github&utm_medium=banner&utm_campaign=CLI#gh-dark-mode-only
 [very_good_ventures_link_light]: https://verygood.ventures/?utm_source=github&utm_medium=banner&utm_campaign=CLI#gh-light-mode-only
